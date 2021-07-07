@@ -22,19 +22,21 @@ age.addEventListener('keyup', e => {
 // FUNCIONES
 function verifyAge(age) {
     const ageNumber = Number(age);
-    const ageCorrect = document.getElementById('age-correct');
-    const ageIncorrect = document.getElementById('age-incorrect');
 
-    if (ageNumber >= 18) {
-        // mostrar que es mayor de edad
-        ageCorrect.classList.remove('d-none');
-        ageCorrect.classList.add('d-block');
-        ageIncorrect.classList.add('d-none');
-    } else {
-        // mostrar que es menor de edad
-        ageIncorrect.classList.remove('d-none');
-        ageIncorrect.classList.add('d-block');
-        ageCorrect.classList.add('d-none');
+    switch (ageNumber){
+        case 18:
+        case 45:
+            alertMessage('alert-success', 'Si eres mayor de edad.');
+            break;
+        case 60:
+            alertMessage('alert-warning', 'Eres de la tercera edad.');
+            break;
+        case 15:
+            alertMessage('alert-danger', 'Eres menor de edad.');
+            break;
+        default:
+            alertMessage('alert-info', 'No sabemos que tipo de persona eres.');
+            break;
     }
 }
 
@@ -60,4 +62,23 @@ function changeStatusBtn(nameBtn, status) {
         btn.classList.add('btn-light');
         btn.classList.remove('btn-primary');
     }
+}
+
+function alertMessage(typeAlert, alertMessage) {
+    const ageAlert = document.getElementById('age-alert');
+    const ageMessage = document.getElementById('age-message');
+
+    // remove class
+    ageAlert.classList.remove('d-none');
+    ageAlert.classList.remove('alert-danger');
+    ageAlert.classList.remove('alert-info');
+    ageAlert.classList.remove('alert-warning');
+    ageAlert.classList.remove('alert-success');
+
+    // add class
+    ageAlert.classList.add('d-block');
+    ageAlert.classList.add(typeAlert);
+
+    // add text
+    ageMessage.innerText = alertMessage;
 }
