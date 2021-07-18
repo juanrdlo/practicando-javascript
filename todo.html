@@ -15,14 +15,10 @@
                 <div class="todo--container">
                     <div class="todo--header text-center">
                         <h4 class="todo--header-title">Mi lista de tareas</h4>
-                        <p>XX tareas agregadas</p>
+                        <p><span id="count-todo"></span> tareas agregadas</p>
                     </div>
                     <div class="todo--content">
-                        <div class="row">
-                            <div class="col-8">Una Tarea mas</div>
-                            <div class="col-4">
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
+                        <div class="row" id="list--todo">
                         </div>
                     </div>
                     <div class="todo--footer">
@@ -33,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="col-4">
-                                <button type="button" class="btn btn-success">Agregar</button>
+                                <button type="button" id="add-todo" class="btn btn-success">Agregar</button>
                             </div>
                         </div>
                     </div>
