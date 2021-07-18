@@ -5,11 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
-    <link rel="stylesheet" href="./assets/css/todo.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/todo.css">
 </head>
 <body>
-  
-    <script src="./assets/js/todo.js"></script>
+    <div class="container" style="height: 100vh">
+        <div class="row h-100 align-content-center">
+            <div class="col-6 offset-3">
+                <div class="todo--container">
+                    <div class="todo--header text-center">
+                        <h4 class="todo--header-title">Mi lista de tareas</h4>
+                        <p>XX tareas agregadas</p>
+                    </div>
+                    <div class="todo--content">
+                        <div class="row">
+                            <div class="col-8">Una Tarea mas</div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo--footer">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="todo-text" placeholder="ingrese una tarea">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-success">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./assets/js/todo.js"></script>
 </body>
 </html>
