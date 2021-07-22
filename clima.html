@@ -16,10 +16,12 @@
                 <div class="col-4 bg-blue-dark">
                     <div class="row h-100 align-content-center">
                         <div class="col-12 text-center">
-                            <i class="fas fa-cloud-sun-rain icon"></i>
-                            <h1 class="temperature">15 <span class="temperature-circle">°c</span></h1>
+                            <i class="fas fa-cloud-sun-rain icon"></i> <br>
+                            <span class="temperature" id="temperature">
+                            </span>
+                            <span class="temperature-circle">°c</span>
                             <p class="texto-shower">Shower</p>
-                            <p class="fecha">Fecha</p>
+                            <p class="fecha" id="date"></p>
                         </div>
                     </div>
                 </div>
@@ -33,25 +35,29 @@
                             <div class="col-6 center-box">
                                 <div class="box-text">
                                     <p class="mt-2 title-box">Estado del viento</p>
-                                    <p class="text-mph">7<span id="mph">mph</span></p>
+                                    <span class="text-mph" id="wind"></span>
+                                    <span id="mph">mph</span>
                                 </div>
                             </div>
                             <div class="col-6 center-box">
                                 <div class="box-text">
                                     <p class="mt-2 title-box">Humedad</p>
-                                    <p class="text-mph">84<span id="mph">%</span></p>
+                                    <span class="text-mph" id="humidity"></span>
+                                    <span id="mph">%</span>
                                 </div>
                             </div>
                             <div class="col-6 center-box">
                                 <div class="box-text">
                                     <p class="mt-2 title-box">Visibilidad</p>
-                                    <p class="text-mph">6,4<span id="mph">millas</span></p>
+                                    <span class="text-mph" id="visibility"></span>
+                                    <span id="mph">millas</span>
                                 </div>
                             </div>
                             <div class="col-6 center-box">
                                 <div class="box-text">
                                     <p class="mt-2 title-box">Presurizacion del aire</p>
-                                    <p class="text-mph pressurization">1091<span id="mph">mb</span></p>
+                                    <span class="text-mph pressurization" id="pressurization"></span>
+                                    <span id="mph">mb</span>
                                 </div>
                             </div>
                         </div>
@@ -63,6 +69,8 @@
 
 
     <script src="https://kit.fontawesome.com/f066da60f2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="./assets/js/clima.js"></script>
 </body>
 </html>
