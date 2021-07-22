@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');body{
-    font-family: 'Nunito Sans', sans-serif  ;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Nunito Sans', sans-serif;
     color: black;
     font-size: 16px;
 }
@@ -31,9 +32,9 @@
 }
 
 #texto{
-    margin-right: 500px;
-    margin-top: 20px;
-    font-size: 25px;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
 }
 
 .fecha{
@@ -43,22 +44,26 @@
 .box-text{
     margin-bottom: 30px;
     background-color: white;
-    color: black;
+    color: #404040;
     width: 310px;
     height: 230px;
-    border-radius: 10px;
+    border-radius: 30px;
     border-style: solid;
     border-color: #316eaa;
-    font-display: bold;
     font-size: 20px;
+    text-align: center;
 }
 
 .text-mph{
-    font-size: 100px;
+    font-size: 140px;
+    font-weight: 800;
+    margin: 0px;
+    line-height: 156px !important;
 }
 
 #mph{
     font-size: 30px;
+    font-weight: 200;
 }
 
 .texto-cel{
@@ -69,4 +74,44 @@
 .texto-shower{
     margin-top: 100px;
     font-size: 30px;
+}
+
+
+/*CODIGO DE JUAN*/
+
+.bg-blue{
+    background-color: #193858;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-blue-dark {
+    background-color: #051929;
+    height: 100vh;
+    color: white;
+}
+
+.temperature {
+    font-weight: 800;
+    font-size: 150px;
+}
+.temperature-circle{
+    font-size: 70px;
+}
+.line-title{
+    background-color: white;
+    height: 5px;
+    width: 20%;
+}
+.title-box {
+    font-weight: 800;
+}
+
+.pressurization {
+    font-size: 100px;
+}
+
+.center-box{
+    display: flex;
+    justify-content: center;
 }

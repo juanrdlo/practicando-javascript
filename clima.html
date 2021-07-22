@@ -9,49 +9,49 @@
     <link rel="stylesheet" href="./assets/css/clima.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <section id="weather-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-4 weather-1">
-                                <div class="row">
-                                    <div class="col-5 text-center">
-                                        <i class="fas fa-cloud-sun-rain icon"></i>
-                                        <p class="texto-cel">15°C</p>
-                                        <p class="texto-shower">Shower</p>
-                                        <p class="fecha">Viernes, 5 de junio de 2020</p>
-                                    </div>
+
+    <div class="container-fluid bg-blue">
+        <section id="weather-page-2">
+            <div class="row">
+                <div class="col-4 bg-blue-dark">
+                    <div class="row h-100 align-content-center">
+                        <div class="col-12 text-center">
+                            <i class="fas fa-cloud-sun-rain icon"></i>
+                            <h1 class="temperature">15 <span class="temperature-circle">°c</span></h1>
+                            <p class="texto-shower">Shower</p>
+                            <p class="fecha">Fecha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="container h-100">
+                        <div class="row h-100 align-content-center">
+                            <div class="col-12 mb-5">
+                                <h2 id="texto">Este es el clima de hoy</h2>
+                                <div class="line-title"></div>
+                            </div>
+                            <div class="col-6 center-box">
+                                <div class="box-text">
+                                    <p class="mt-2 title-box">Estado del viento</p>
+                                    <p class="text-mph">7<span id="mph">mph</span></p>
                                 </div>
                             </div>
-                            <div class="col-8 weather-2 mt-5">
-                                <h5 id="texto">Este es el clima de hoy</h5>
-                                <div class="row mt-5">
-                                    <div class="col-6 p-3 box-number">
-                                        <div class="box-text">
-                                            <p class="text-center mt-2">Estado del viento</p>
-                                            <p class="text-mph text-center">7<span id="mph">mph</span></p>                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-6 p-3 box-number">
-                                        <div class="box-text">
-                                            <p class="text-center mt-2">humedad</p>
-                                            <p class="text-mph text-center">84<span id="mph">%</span></p>                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-6 p-3 box-number">
-                                        <div class="box-text">
-                                            <p class="text-center mt-2">Visibilidad</p>
-                                            <p class="text-mph text-center">6,4<span id="mph">millas</span></p>                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-6 p-3 box-number">
-                                        <div class="box-text">
-                                            <p class="text-center mt-2">presurizacion del aire</p>
-                                            <p class="text-mph text-center">998<span id="mph">mb</span></p>                                            
-                                        </div>
-                                    </div>
+                            <div class="col-6 center-box">
+                                <div class="box-text">
+                                    <p class="mt-2 title-box">Humedad</p>
+                                    <p class="text-mph">84<span id="mph">%</span></p>
+                                </div>
+                            </div>
+                            <div class="col-6 center-box">
+                                <div class="box-text">
+                                    <p class="mt-2 title-box">Visibilidad</p>
+                                    <p class="text-mph">6,4<span id="mph">millas</span></p>
+                                </div>
+                            </div>
+                            <div class="col-6 center-box">
+                                <div class="box-text">
+                                    <p class="mt-2 title-box">Presurizacion del aire</p>
+                                    <p class="text-mph pressurization">1091<span id="mph">mb</span></p>
                                 </div>
                             </div>
                         </div>
@@ -60,6 +60,8 @@
             </div>
         </section>
     </div>
+
+
     <script src="https://kit.fontawesome.com/f066da60f2.js" crossorigin="anonymous"></script>
     <script src="./assets/js/clima.js"></script>
 </body>
